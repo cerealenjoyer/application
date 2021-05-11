@@ -1,6 +1,15 @@
 body {
-  background-color: #208c71;
+  background-color: #008080;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  min-height: 95vh;
+  margin-left: -5pt;
+}
+body.dark {
+  background-color: #000000;
+  color: white;
 }
 header {
   display: flex;
@@ -8,49 +17,77 @@ header {
   margin-left: 100pt;
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 40pt;
+  font-size: 30pt;
 }
 #subtitle {
-  font-size: 20pt;
-  margin-bottom: -60pt;
+  font-size: 15pt;
+  margin-bottom: -50pt;
+}
+#page {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
 }
 #navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 100%;
-  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 150px;
 }
-button {
+#navigation div {
+  display: flex;
+  flex-direction: column;
   background: none;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 8px 16px 20px 20px;
+}
+
+#navigation div span {
+  /* margin: auto; */
+  padding-top: 2px;
 }
 #window {
-  height: 600px;
-  background-color: #6c6c6c;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
   border-style: solid;
-  border-color: #6c6c6c;
+  border-color: #818181;
+  height: 100%;
 }
-#blue-bar {
+#nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: aliceblue;
-  background-color: blue;
+  background-color: #010081;
 }
-#blue-bar button {
+#nav-bar.dark {
+  background-color: #ff0081;
+}
+#nav-bar button {
   color: black;
-  background-color: #848484;
+  background-color: #c3c3c3;
+  font-weight: bold;
+  margin-bottom: auto;
+  margin-top: 1pt;
+  margin-right: 1pt;
 }
 #content {
-  background-color: #848484;
-  flex: 1;
+  background-color: #c3c3c3;
+}
+footer {
+  /* flex: none; */
+  width: 100vw;
+  background-color: #c3c3c3;
+}
+footer button {
+  display: flex;
+  flex-direction: row;
+}
+footer button span {
+  margin: auto;
+  font-weight: bold;
 }
