@@ -1,22 +1,20 @@
 body {
   background-color: #008080;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  min-height: 95vh;
-  margin-left: -5pt;
 }
-body.dark {
+.dark {
   background-color: #000000;
   color: white;
 }
 header {
   display: flex;
   flex-direction: column-reverse;
-  margin-left: 100pt;
+  margin-left: 25pt;
   padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium";
   font-size: 30pt;
 }
 #subtitle {
@@ -32,42 +30,50 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-width: 150px;
+  display: block;
+  position: absolute;
+  overflow: auto;
 }
-#navigation div {
+
+.navlink {
   display: flex;
   flex-direction: column;
   background: none;
   color: white;
   border: none;
   padding: 8px 16px 20px 20px;
+  max-width: 48px;
 }
 
-#navigation div span {
-  /* margin: auto; */
+.navlink span {
   padding-top: 2px;
+  text-align: center;
 }
 #window {
   display: flex;
   flex-direction: column;
+  margin-left: 125px;
   border-style: solid;
   border-color: #818181;
-  height: 100%;
+  flex-shrink: 1;
 }
-#nav-bar {
+#window-bar {
   display: flex;
   flex-direction: row;
+
   justify-content: space-between;
   color: aliceblue;
   background-color: #010081;
+  font-size: 9pt;
+  max-height: 20pt;
 }
-#nav-bar.dark {
+#window-bar.dark {
   background-color: #ff0081;
 }
-#nav-bar button {
+h2 {
+  margin: 1pt;
+}
+#window-bar button {
   color: black;
   background-color: #c3c3c3;
   font-weight: bold;
@@ -77,17 +83,40 @@ header {
 }
 #content {
   background-color: #c3c3c3;
+  padding: 5pt;
+  flex-basis: 20em;
+}
+#content.dark {
+  background-color: black;
 }
 footer {
   /* flex: none; */
-  width: 100vw;
+  width: 100%;
   background-color: #c3c3c3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
-footer button {
+#nite {
   display: flex;
   flex-direction: row;
 }
-footer button span {
+#nite span {
   margin: auto;
   font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  #page {
+    flex-direction: column;
+  }
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  #window {
+    margin-left: 0;
+    margin-bottom: 30pt;
+  }
 }
