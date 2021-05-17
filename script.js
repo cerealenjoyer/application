@@ -6,7 +6,7 @@ const linkedList = buttonList.map(a => a.addEventListener('click', function(){di
 const windowBar = document.getElementById('window-title');
 function displayTab (index){
 tabList.map(a =>a.style.display = 'none')
-tabList[index].style.display = 'block';
+tabList[index].style.display = 'flex';
 windowBar.textContent = buttonList[index].querySelector('span').innerHTML
 }
 const closeTabs = () => { tabList.map(a => a.style.display = 'none');
@@ -28,4 +28,4 @@ function time() {
 
 document.querySelector('#nite').addEventListener('click', niteMode);
 document.getElementById('close').addEventListener('click', closeTabs);
-setTimeout(time, 1000);
+setInterval(time, 1000);

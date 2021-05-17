@@ -1,5 +1,5 @@
 body {
-  background-color: #008080;
+  background-color: #009999;
   font-family: "Arial Narrow", Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ h3 {
   flex-direction: column;
   margin-left: 125px;
   border-style: solid;
-  border-color: #818181;
+  border-color: #999999;
   box-shadow: 1px 1px 2px black, -1px -1px 2px white;
 }
 #window-bar {
@@ -62,30 +62,30 @@ h3 {
 
   justify-content: space-between;
   color: aliceblue;
-  background-color: #010081;
+  background-color: #000099;
   font-size: 12px;
   max-height: 25px;
 }
 #window-bar.dark {
-  background-color: #ff0081;
+  background-color: #ff0099;
 }
 h2 {
   margin: 1px;
 }
 #window-bar button {
   color: black;
-  background-color: #c3c3c3;
+  background-color: #cccccc;
   font-weight: bold;
   margin-bottom: auto;
   margin-top: 1px;
   margin-right: 1px;
 }
 #content {
-  background-color: #c3c3c3;
+  background-color: #cccccc;
   min-height: 200px;
-
+  min-width: 400px;
+  max-width: 600px;
   padding: 5px;
-  /* flex-basis: 20em; */
 }
 p {
   margin-bottom: 20px;
@@ -95,11 +95,12 @@ p {
 }
 .tab-copy {
   display: none;
+  flex-direction: column;
 }
 
 footer {
   width: 100%;
-  background-color: #c3c3c3;
+  background-color: #cccccc;
   position: fixed;
   bottom: 0;
   left: 0;
