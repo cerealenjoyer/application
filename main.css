@@ -17,9 +17,12 @@ header {
   font-family: "Franklin Gothic Medium";
   font-size: 40px;
 }
+h1 {
+  line-height: 70%;
+}
 h3 {
   font-size: 20px;
-  margin-bottom: -70px;
+  margin-bottom: -50px;
 }
 #page {
   display: flex;
@@ -32,7 +35,6 @@ h3 {
   padding: 0;
   display: block;
   position: absolute;
-  overflow: auto;
 }
 
 .navlink {
@@ -61,7 +63,7 @@ h3 {
   justify-content: space-between;
   color: aliceblue;
   background-color: #010081;
-  font-size: 12.5px;
+  font-size: 12px;
   max-height: 25px;
 }
 #window-bar.dark {
@@ -96,7 +98,6 @@ p {
 }
 
 footer {
-  /* flex: none; */
   width: 100%;
   background-color: #c3c3c3;
   position: fixed;
@@ -117,22 +118,20 @@ footer {
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column;
-    margin-top: -29px;
   }
   h3 {
-    margin-top: -60px;
+    margin-top: -45px;
   }
-  #page {
-    flex-direction: column;
-  }
+
   #navigation {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: absolute;
     margin-top: 75px;
   }
   #window {
     margin-left: 0;
     margin-bottom: 30px;
+    margin-top: 190px;
   }
 }

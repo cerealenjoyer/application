@@ -2,12 +2,15 @@ const tabCopy = document.getElementsByClassName('tab-copy');
 const tabList = Array.from(tabCopy)
 const buttons = document.getElementsByClassName('navlink')
 const buttonList = Array.from(buttons)
-const linkedList = buttonList.map(a => a.addEventListener('click', function(){displayTab(tabList[buttonList.indexOf(this)])}));
-function displayTab (element){
+const linkedList = buttonList.map(a => a.addEventListener('click', function(){displayTab(buttonList.indexOf(this))}));
+const windowBar = document.getElementById('window-title');
+function displayTab (index){
 tabList.map(a =>a.style.display = 'none')
-element.style.display = 'block'
+tabList[index].style.display = 'block';
+windowBar.textContent = buttonList[index].querySelector('span').innerHTML
 }
-const closeTabs = () =>  tabList.map(a => a.style.display = 'none')
+const closeTabs = () => { tabList.map(a => a.style.display = 'none');
+windowBar.textContent = 'New Window'}
 
 
 function niteMode() {
@@ -25,4 +28,4 @@ function time() {
 
 document.querySelector('#nite').addEventListener('click', niteMode);
 document.getElementById('close').addEventListener('click', closeTabs);
-setTimeout(time,1000)
+setTimeout(time, 1000);
