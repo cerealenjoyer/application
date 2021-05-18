@@ -134,6 +134,7 @@ footer {
     margin-left: 0;
     margin-bottom: 30px;
     margin-top: 190px;
+    max-width: 100%;
   }
   #content {
     min-width: initial;
