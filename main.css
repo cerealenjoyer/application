@@ -135,4 +135,8 @@ footer {
     margin-bottom: 30px;
     margin-top: 190px;
   }
+  #content {
+    min-width: initial;
+    min-height: 40px;
+  }
 }
