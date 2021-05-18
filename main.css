@@ -55,6 +55,7 @@ h3 {
   border-style: solid;
   border-color: #999999;
   box-shadow: 1px 1px 2px black, -1px -1px 2px white;
+  margin-bottom: 35px;
 }
 #window-bar {
   display: flex;
@@ -87,15 +88,45 @@ h2 {
   max-width: 600px;
   padding: 5px;
 }
-p {
-  margin-bottom: 20px;
-}
 #content.dark {
   background-color: black;
 }
+p {
+  margin-bottom: 20px;
+}
+
 .tab-copy {
   display: none;
   flex-direction: column;
+  background-color: white;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 1px 1px 1px 1px #999999, -1px -1px 1px 1px #999999;
+}
+.tab-copy.dark {
+  background-color: black;
+
+  box-shadow: none;
+}
+#bread-tool {
+  background-color: #cccccc;
+  flex-direction: row;
+  max-width: 400px;
+}
+#bread-tool.dark {
+  background-color: black;
+}
+#input-fields {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#bread-tool input {
+  max-width: 200px;
+}
+#bread-tool button {
+  max-width: 80px;
 }
 
 footer {
