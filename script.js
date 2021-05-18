@@ -5,7 +5,7 @@ const windowBar = document.getElementById('window-title');
 function displayTab (index){
 tabList.map(a =>a.style.display = 'none')
 tabList[index].style.display = 'flex';
-windowBar.textContent = buttonList[index].querySelector('span').textContext
+windowBar.textContent = buttonList[index].querySelector('span').textContent;
 }
 const closeTabs = () => { tabList.map(a => a.style.display = 'none');
 document.getElementById('output').textContent = '';
