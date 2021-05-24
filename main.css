@@ -158,7 +158,7 @@ footer {
     margin-top: -45px;
   }
 
-  #navigation {
+  nav {
     display: flex;
     flex-direction: row;
     position: absolute;
