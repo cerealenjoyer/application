@@ -13,45 +13,33 @@
       <h3>Founders and Coders application page</h3>
     </header>
     <main id="page">
-      <!-- Nav bar -->
-      <ul id="navigation">
+      <nav>
         <div class="navlink">
-          <img
-            src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-0.png"
-            alt="windows computer icon"
-          />
+          <img src="computer_explorer_cool-0.png" alt="windows computer icon" />
           <span>About Me</span>
         </div>
         <div class="navlink">
-          <img
-            src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png"
-            alt="windows help book icon"
-          />
+          <img src="help_book_cool-4.png" alt="windows help book icon" />
           <span>My interests</span>
         </div>
         <div class="navlink">
-          <img
-            src="https://win98icons.alexmeub.com/icons/png/envelope_open_sheet-0.png"
-            alt="windows mail icon"
-          />
+          <img src="envelope_open_sheet-0.png" alt="windows mail icon" />
           <span>Contact</span>
         </div>
         <div class="navlink">
-          <img
-            src="https://win98icons.alexmeub.com/icons/png/calculator-0.png"
-            alt="windows calculator icon"
-          />
+          <img src="calculator-0.png" alt="windows calculator icon" />
           <span>Sourdough hydration calculator</span>
         </div>
-      </ul>
+      </nav>
       <!-- Content -->
       <div id="window">
         <div id="window-bar">
-          <h2 id="window-title">New window</h2>
+          <h2 id="window-title">New Window</h2>
           <button id="close">X</button>
         </div>
         <div id="content">
-          <div class="tab-copy" id="about-me">
+          <section class="tab-copy" id="about-me">
+            <h2>About Me</h2>
             <p>
               Hello world! I'm Sasha. I'm an English Literature graduate, 29,
               who has found herself writing fundraising materials for an
@@ -69,17 +57,45 @@
               the first computer I ever used - my Grandpa's Windows 98.
             </p>
             <p>
+              Computers and technology have always been of interest to me, both
+              from a purely surface-level perspective (they're fun to play
+              around with) but also because of the more theoretical questions
+              that they raise in regards to gender and identity. The internet is
+              for many trans people of my generation a formative space to
+              explore gender and expression; you can 'try out' an alternate
+              gender presentation in a virtual space without fear of real-life
+              backlash. However, as with other marginalised groups, tech can be
+              used to make the lives of trans people more difficult that speak
+              to a culture of privilege within the industry. Web forms are
+              frequently guilty of asking poorly worded questions around gender,
+              or can accidentally reveal someone's trans status to others.
+            </p>
+            <p>
+              I was the first openly trans person at my current workplace, and I
+              went back and forth with HR for a while because they couldn't
+              understand that it wasn't appropriate for my assigned gender at
+              birth to be displayed in my intranet profile. They didn't mean
+              anything by it, they just hadn't considered what my user
+              experience might be: That's why I feel so strongly about diversity
+              in tech, because it doesn't just affect people who work in the
+              tech industry, but people from all walks of life who use
+              technology on a daily basis.
+            </p>
+            <p>
               I first became aware of Founders and Coders through one of my
               friends, who I'd previously worked with until she quit to join one
               of your cohorts in 2018. When she told me about your intention to
               widen the presence of underrepresented groups in tech I knew it
               was something I wanted to be a part of. I'm a huge fan of how
               committed F&C is to upholding the use of inclusive language, which
-              I've seen on the Discord both from the Discord bot and the FAC
-              team.
+              I've seen on the Discord (and the Slack before that) both from the
+              Discord bot and the FAC team. I've found the Tuesday and Thursday
+              coaching groups an absolute delight, specifically they've turned
+              DOM manipulation from a total enigma to something manageable.
             </p>
-          </div>
-          <div class="tab-copy" id="my-interests">
+          </section>
+          <section class="tab-copy" id="my-interests">
+            <h2>My Interests</h2>
             <p>
               I'm a huge fan of making things with my hands and I'm extremely
               reluctant to spend money. Most of my hobbies are reflective of
@@ -97,14 +113,16 @@
               using CSS, so I can take full credit for the page, limitations and
               all.
             </p>
-          </div>
-          <div class="tab-copy" id="contact">
+          </section>
+          <section class="tab-copy" id="contact">
+            <h2>Contact</h2>
             <p>
               You can reach me at sasha.antilyons@gmail.com, links to my
               freecodecamp profile, codewars and github, as well as my repl
             </p>
-          </div>
-          <div class="tab-copy" id="bread-tool">
+          </section>
+          <section class="tab-copy" id="bread-tool">
+            <h2>Sourdough Hydration Calculator</h2>
             <div id="input-fields">
               <label for="flour">Flour (g)</label
               ><input type="text" id="flour" />
@@ -114,24 +132,23 @@
               <input type="text" id="hydration" />
               <button id="breadCalc">Calculate</button>
             </div>
-            <p id="output"></p>
-          </div>
+            <p id="output">
+              This tool lets me calculate how much water to put in my bread -
+              put in how much flour and starter you're using, and how hydrated
+              you want the dough to be and it will tell you how much water to
+              use. Try it out!
+            </p>
+          </section>
         </div>
       </div>
     </main>
     <footer>
       <button id="nite">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/windows-0.png"
-          alt="windows logo"
-        />
+        <img src="windows-0.png" alt="windows logo" />
         <span>Night</span>
       </button>
       <button id="easter-egg">
-        <img
-          src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-1.png"
-          alt="Sound icon"
-        />
+        <img src="loudspeaker_rays-1.png" alt="Sound icon" />
         <span id="time"></span>
       </button>
     </footer>

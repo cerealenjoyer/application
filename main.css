@@ -29,7 +29,7 @@ h3 {
   flex-direction: row;
   flex: auto;
 }
-#navigation {
+nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -108,6 +108,9 @@ p {
   background-color: black;
 
   box-shadow: none;
+}
+section h2 {
+  display: none;
 }
 #bread-tool {
   background-color: #cccccc;

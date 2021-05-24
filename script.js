@@ -1,14 +1,15 @@
-const tabList = Array.from(document.getElementsByClassName('tab-copy'))
+const tabList = Array.from(document.querySelectorAll('section'))
 const buttonList = Array.from(document.getElementsByClassName('navlink'))
 const linkedList = buttonList.map(a => a.addEventListener('click', function(){displayTab(buttonList.indexOf(this))}));
 const windowBar = document.getElementById('window-title');
 function displayTab (index){
 tabList.map(a =>a.style.display = 'none')
 tabList[index].style.display = 'flex';
-windowBar.textContent = buttonList[index].querySelector('span').textContent;
+windowBar.textContent = tabList[index].querySelector('h2').textContent;
 }
 const closeTabs = () => { tabList.map(a => a.style.display = 'none');
 document.getElementById('output').textContent = '';
+document.querySelectorAll('input').forEach(a => a.value ='');
 windowBar.textContent = 'New Window'}
 
 const elementArray =['body', '#window-bar', '#content'].map(a => document.querySelector(a));
@@ -16,13 +17,13 @@ function niteMode() {
 const classNite = tabList.map(d => d.classList.toggle("dark"))
 const niteTime = elementArray.map(e => e.classList.toggle("dark"))
 }
-const doubleDigit = (t) => {return (t<10 ? '0'+t : t)}
 
 function time() {
     today = new Date();
     var hour = today.getHours();
     var min = today.getMinutes();
-    document.getElementById('time').textContent= doubleDigit(hour)+':'+doubleDigit(min)
+    document.getElementById('time').textContent= String(hour).padStart(2,'0')+':'+String(min).padStart(2, '0')
+    // Shout out to coaching group Cassowary for teaching me about padStart!
 }
 
 function doughCalculator() {
