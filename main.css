@@ -1,6 +1,6 @@
 body {
   background-color: #009999;
-  font-family: "Arial Narrow", "Liberation Mono", Arial, sans-serif;
+  font-family: "Arial Narrow", "Liberation Sans", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-content: space-between;
